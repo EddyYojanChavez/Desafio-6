@@ -1,0 +1,26 @@
+import numpy as np
+
+A = np.array([
+    [1.000, 0.500, 0.333],
+    [0.500, 0.333, 0.250],
+    [0.333, 0.250, 0.200]
+])
+
+b = np.array([1.833, 1.083, 0.783])
+
+# Solución original
+x = np.linalg.solve(A, b)
+print("Solución original:")
+print(x)
+
+# Pequeño cambio en b
+b_modified = np.array([1.833, 1.083, 0.784])  # Cambio de 0.001 en el último término
+
+# Nueva solución
+x_modified = np.linalg.solve(A, b_modified)
+print("\nSolución con pequeño cambio:")
+print(x_modified)
+
+# Diferencia entre soluciones
+print("\nDiferencia entre soluciones:")
+print(x_modified - x)
