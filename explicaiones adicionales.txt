@@ -1,0 +1,11 @@
+Consideremos el siguiente sistema de ecuaciones:
+
+1.000x + 0.500y + 0.333z = 1.833
+0.500x + 0.333y + 0.250z = 1.083
+0.333x + 0.250y + 0.200z = 0.783
+
+Explicación:
+Este sistema es mal condicionado porque los coeficientes de las variables 
+son muy similares entre sí, lo que hace que las ecuaciones sean casi linealmente 
+dependientes. Esto significa que pequeños cambios en los términos independientes 
+pueden causar grandes cambios en la solución.
